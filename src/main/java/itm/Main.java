@@ -5,8 +5,9 @@ import itm.dbWorks.DatabaseQueryService;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class main {
+public class Main {
     public static void main(String[] args) throws SQLException, IOException {
+        System.out.println("Hello world!");
         DatabaseQueryService databaseQueryService = new DatabaseQueryService();
 
         databaseQueryService.findLongestProject().forEach(System.out::println); System.out.println();
